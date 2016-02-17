@@ -14,22 +14,28 @@ body {
 /*Styling for hidden divs when shown via css hover over .catDiv*/
 
 .catDiv:hover > .felisHover {
-  color: red;
+  opacity: 1;
 }
 
 /*styling for all 'hidden' <div>s*/
 
 .felisHover {
-  /*opacity: 0;*/
+  opacity: 0;
+  /*enable the thing above eventually*/
   position: absolute;
   top: 20px;
   bottom: 20px;
   right: 20px;
   left: 20px;
   border: solid 1px black;
-  font-size: 1.4em;
+  /*disable the thing above eventually*/
+  font-size: 1.6em;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
   text-align: center;
   padding-top: 60%;
+  background:rgba(71,163,218,0.2);
 }
 
 /*Styling for all cat images*/
