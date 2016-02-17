@@ -9,6 +9,7 @@ body {
   display: block;
   float: left; /*right works too! why?*/
   width: calc(100% / 6);
+  margin-top: -3px;
 }
 
 /*Styling for hidden divs when shown via css hover over .catDiv*/
@@ -27,8 +28,6 @@ body {
   bottom: 20px;
   right: 20px;
   left: 20px;
-  border: solid 1px black;
-  /*disable the thing above eventually*/
   font-size: 1.6em;
   font-weight: 600;
   color: #fff;
@@ -42,4 +41,45 @@ body {
 
 .catPic {
   max-width: 100%; /*the image will take up 100% of its parent's width*/
+}
+
+/*Media queries*/
+
+@media screen and (max-width:1190px) and (min-width: 945px) {
+  .catDiv {
+    width: calc(100% / 5);
+  }
+}
+
+@media screen and (max-width:945px) and (min-width: 660px) {
+  .catDiv {
+    width: calc(100% / 4);
+  }
+  .felisHover {
+    padding-top: 55%;
+  }
+}
+
+@media screen and (max-width:660px) and (min-width: 400px) {
+  .catDiv {
+    width: calc(100% / 3);
+  }
+  .felisHover {
+    padding-top: 55%;
+  }
+}
+
+@media screen and (max-width:400px) and (min-width: 300px) {
+  .catDiv {
+    width: calc(100% / 2);
+  }
+  .felisHover {
+    padding-top: 55%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .catDiv {
+    width: calc(100%);
+  }
 }
