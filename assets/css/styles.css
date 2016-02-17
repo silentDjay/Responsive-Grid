@@ -12,7 +12,8 @@ body {
   margin-top: -3px;
 }
 
-/*Styling for hidden divs when shown via css hover over .catDiv*/
+/*Styling for .felisHover when hovering over .catDiv
+The '>' operator only works with an element (on the right) that is a direct child of the element on the right.  */
 
 .catDiv:hover > .felisHover {
   opacity: 1;
