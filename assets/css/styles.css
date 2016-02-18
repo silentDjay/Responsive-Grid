@@ -45,6 +45,7 @@ NOTE: .catDiv:hover > .felisHover would work as well, but only because .felisHov
 
 .catPic {
   max-width: 100%; /*the image will take up 100% of its parent's width*/
+  max-height: 100%;
 }
 
 /*Media queries*/
