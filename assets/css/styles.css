@@ -26,7 +26,7 @@ NOTE: .catDiv:hover > .felisHover would work as well, but only because .felisHov
 
 .felisHover {
   opacity: 0;
-  /*enable the thing above eventually*/
+  /*^^ This is transparent by default*/
   position: absolute;
   top: 20px;
   bottom: 20px;
@@ -39,13 +39,13 @@ NOTE: .catDiv:hover > .felisHover would work as well, but only because .felisHov
   text-align: center;
   padding-top: 60%;
   background:rgba(71,163,218,0.2);
+  /*^^ The 'a' alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).*/
 }
 
 /*Styling for all cat images*/
 
 .catPic {
   max-width: 100%; /*the image will take up 100% of its parent's width*/
-  max-height: 100%;
 }
 
 /*Media queries*/
