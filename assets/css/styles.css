@@ -12,10 +12,13 @@ body {
   margin-top: -3px;
 }
 
-/*Styling for .felisHover when hovering over .catDiv
-The '>' operator only works with an element (on the right) that is a direct child of the element on the right.  */
+/*Styling for .felisHover when hovering over .catDiv*/
 
-.catDiv:hover > .felisHover {
+/*The syntax below allows altering the styling of the element on the right (.felisHover) when the element on the left (.catDiv) is hovered upon. This works ONLY when the element on the right is somewhere (anywhere) within the element on the left.
+
+NOTE: .catDiv:hover > .felisHover would work as well, but only because .felisHover is a direct child of .catDiv*/
+
+.catDiv:hover .felisHover {
   opacity: 1;
 }
 
